@@ -4,12 +4,12 @@
 #
 
 
-Survivor/[Ll]ibrary/
-Survivor/[Tt]emp/
-Survivor/[Oo]bj/
+/Survivor/[Ll]ibrary/
+/Survivor/[Tt]emp/
+/Survivor/[Oo]bj/
 **/[Bb]uild/
 **/[Bb]uilds/
-Survivor/[Ll]ogs/
+/Survivor/[Ll]ogs/
 **/[Mm]emoryCaptures/
 
 
