@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 1885928413292359476}
   - component: {fileID: 8437960440893512811}
   - component: {fileID: 7150876313026496188}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: PBRCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1013,9 +1013,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.3
-  m_Height: 2.06
+  m_Height: 2.44134
   m_Direction: 1
-  m_Center: {x: 0, y: 0.73, z: 0}
+  m_Center: {x: 0, y: 0.9206699, z: 0}
 --- !u!114 &6904972965472874586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1045,6 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  hudDamageText: {fileID: 0}
   healthSlider: {fileID: 0}
 --- !u!114 &8437960440893512811
 MonoBehaviour:

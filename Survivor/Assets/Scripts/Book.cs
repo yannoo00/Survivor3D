@@ -5,6 +5,7 @@ using UnityEngine;
 public class Book : MonoBehaviour, IItem
 {
     // Start is called before the first frame update
+    public int damage;
     void Start()
     {
         
@@ -18,8 +19,13 @@ public class Book : MonoBehaviour, IItem
 
     public void Use(GameObject target)
     {
-        target.GetComponent<PlayerHealth>().startingHealth = 500;
+        target.GetComponentInChildren<Gun>().damage += damage;
 
         return;
+    }
+
+    public void Reinforce(int tech)
+    {
+
     }
 }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: IceSword
   m_EditorClassIdentifier: 
   itemName: IceSword
+  content: "\uC8FC\uC704\uB97C \uB3CC\uBA70 \uB2FF\uB294 \uC801\uC744 \uACF5\uACA9\uD569\uB2C8\uB2E4."
   itemType: 1
   itemImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   itemPrefab: {fileID: 2671195449612791144, guid: c9f385354d91e06468edc568b8216058,

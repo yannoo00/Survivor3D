@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &190595617243628986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190595617243628987}
+  - component: {fileID: 190595617243628984}
+  m_Layer: 0
+  m_Name: ItemAllocater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &190595617243628987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190595617243628986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1020651, y: -38.10646, z: -1.00782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &190595617243628984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190595617243628986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e80c8c5e7285e438f61b39873e4b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemList:
+  - {fileID: 2671195449612791144, guid: c9f385354d91e06468edc568b8216058, type: 3}
+  - {fileID: 3750137133619890822, guid: 268cde16b63f33d43a3fd43975653cdb, type: 3}
+  - {fileID: 8909297897003622985, guid: 7b8d58fd59564f543abd9fa67a06aff5, type: 3}
+  - {fileID: 5379641145490211015, guid: fbd6af2ec307b03449ecc4bf7d61085b, type: 3}
+  - {fileID: 813859890590405621, guid: 6cc6ede42a13fb84e874471b1a1be7c6, type: 3}
+  - {fileID: 813859890590405621, guid: 6cc6ede42a13fb84e874471b1a1be7c6, type: 3}
+  - {fileID: 813859890590405621, guid: 6cc6ede42a13fb84e874471b1a1be7c6, type: 3}
+  - {fileID: 813859890590405621, guid: 6cc6ede42a13fb84e874471b1a1be7c6, type: 3}
+  - {fileID: 813859890590405621, guid: 6cc6ede42a13fb84e874471b1a1be7c6, type: 3}
+  powerupList:
+  - {fileID: 6932819964553309949, guid: b666afddbe93ac6458b81dcd9854b111, type: 3}
+  - {fileID: 3349942032551397803, guid: 910fc4ab9d800d641b11b6e687be82d2, type: 3}
+  - {fileID: 2954312819609056625, guid: 6242c0fb097dc054b8184cc589643756, type: 3}
+  buttonUI: {fileID: 0}
+  player: {fileID: 0}
+  reinforceUI: {fileID: 0}
+  buttonR1: {fileID: 0}
+  buttonR2: {fileID: 0}
+  buttonR3: {fileID: 0}
+  buttonR4: {fileID: 0}
+  buttonR5: {fileID: 0}
+  buttonR6: {fileID: 0}
+  firstText: {fileID: 0}
+  secondText: {fileID: 0}
+  thirdText: {fileID: 0}
+  firstContent: {fileID: 0}
+  secondContent: {fileID: 0}
+  thirdContent: {fileID: 0}
+  firstImg: {fileID: 0}
+  secondImg: {fileID: 0}
+  thirdImg: {fileID: 0}
+  ITEM: 9999
+  enemySpawner: {fileID: 0}

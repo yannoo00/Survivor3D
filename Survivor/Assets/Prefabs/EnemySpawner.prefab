@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7728927359229840670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7728927359229840664}
+  - component: {fileID: 7728927359229840665}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7728927359229840664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728927359229840670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1020651, y: -38.10646, z: -1.00782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7728927359229840665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728927359229840670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3c0c195c71c644f9b664c5d3fa9b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crabPrefab: {fileID: 0}
+  ghoulPrefab: {fileID: -1853993984617065395, guid: 91a7921b6694741469ed71ad0e7276f6,
+    type: 3}
+  metalGhoulPrefab: {fileID: 0}
+  walkerPrefab: {fileID: 0}
+  balloonPrefab: {fileID: 0}
+  snowmanPrefab: {fileID: 0}
+  balloonYellowPrefab: {fileID: 0}
+  insectPrefab: {fileID: 0}
+  zombiePrefab: {fileID: 0}
+  redSkulPrefab: {fileID: 3498728104971106398, guid: ee647e09f933a2845bae9ed6cfafee08,
+    type: 3}
+  redSkulMiniPrefab: {fileID: 3498728104971106398, guid: 1c0035f198d716d4090b96b10f0f73c9,
+    type: 3}
+  blueSkulPrefab: {fileID: 7589955852219524094, guid: b8936e5ebcbe48a48ac5422198e3c202,
+    type: 3}
+  blueSkulMiniPrefab: {fileID: 7589955852219524094, guid: 9f5624bb6363fe140a4ae4c697abc62d,
+    type: 3}
+  spiderPrefab: {fileID: 6368329659370573757, guid: 791ef01a1edb13741a76e7b8dbdf1c4b,
+    type: 3}
+  golemBossPrefab: {fileID: 0}
+  orcBossPrefab: {fileID: 0}
+  shootingZombiePrefab: {fileID: 0}
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  itemAllocater: {fileID: 190595617243628986, guid: 3702acbdf57e785409c792821d01663e,
+    type: 3}
+  itemSpawner: {fileID: 2713849005013243962, guid: 1e5138f7ee4c7164986e54a336376731,
+    type: 3}
+  playerSkill: {fileID: 0}
+  damageMax: 40
+  damageMin: 10
+  healthMax: 250
+  healthMin: 150
+  speedMax: 2
+  speedMin: 1
+  strongEnemyColor: {r: 1, g: 0, b: 0, a: 1}
+  LastEnemies: 0

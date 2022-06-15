@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Kimchi : MonoBehaviour, IItem
 {
-    // Start is called before the first frame update
+    public float speed;
+
     void Start()
     {
         
@@ -16,9 +17,15 @@ public class Kimchi : MonoBehaviour, IItem
         
     }
 
+    public void Reinforce(int tech)
+    {
+
+    }
+
+
     public void Use(GameObject target)
     {
-        target.GetComponent<PlayerMovement>().moveSpeed += 10f;
+        target.GetComponent<PlayerMovement>().moveSpeed += speed;
         
         return;
     }

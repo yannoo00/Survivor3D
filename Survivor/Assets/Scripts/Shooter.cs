@@ -4,6 +4,8 @@ using UnityEngine;
 // 알맞은 애니메이션을 재생하고 IK를 사용해 캐릭터 양손이 총에 위치하도록 조정
 public class Shooter : MonoBehaviour {
     public Gun gun; // 사용할 총
+    public PlayerSkill playerskill;
+    public bool magician=false;
     private PlayerInput playerInput; // 플레이어의 입력
     private Animator playerAnimator; // 애니메이터 컴포넌트
 
@@ -31,6 +33,14 @@ public class Shooter : MonoBehaviour {
             gun.Fire();
         }
 
+        else if(playerInput.fire2&&magician)
+        {
+            if(gun.state==Gun.State.Ready&&gun.magAmmo>0)
+            {
+                playerskill.MagicianShot();
+            }
+        }
+
         else if (playerInput.reload)
         {
             if (gun.Reload())
@@ -39,17 +49,17 @@ public class Shooter : MonoBehaviour {
             }
         }
 
-        //UpdateUI();
+        UpdateUI();
 
     }
 
-    // 탄약 UI 갱신
-    // private void UpdateUI() {
-    //     if (gun != null && UIManager.instance != null)
-    //     {
-    //         // UI 매니저의 탄약 텍스트에 탄창의 탄약과 남은 전체 탄약을 표시
-    //         UIManager.instance.UpdateAmmoText(gun.magAmmo, gun.ammoRemain);
-    //     }
-    // }
+     //탄약 UI 갱신
+     private void UpdateUI() {
+         if (gun != null && UIManager.instance != null)
+         {
+             // UI 매니저의 탄약 텍스트에 탄창의 탄약과 남은 전체 탄약을 표시
+             UIManager.instance.UpdateAmmoText(gun.magAmmo, gun.ammoRemain);
+         }
+     }
 
 }

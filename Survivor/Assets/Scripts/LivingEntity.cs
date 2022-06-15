@@ -12,7 +12,8 @@ public class LivingEntity : MonoBehaviour, IDamageable {
     public bool dead { get; protected set; } // 사망 상태
     public event Action onDeath; // 사망시 발동할 이벤트 (오브젝트가 죽었을 때 발생)
 
-    
+    public int maxHealth =100;
+    public GameObject hudDamageText;
 
     // 생명체가 활성화될때 상태를 리셋
     
@@ -21,13 +22,13 @@ public class LivingEntity : MonoBehaviour, IDamageable {
         dead = false;
         // 체력을 시작 체력으로 초기화
         health = startingHealth;
-
     }
 
     // 데미지를 입는 기능
     public virtual void OnDamage(float damage) {
         // 데미지만큼 체력 감소
         health -= damage;
+
 
         // 체력이 0 이하 && 아직 죽지 않았다면 사망 처리 실행
         if (health <= 0 && !dead)
@@ -46,9 +47,10 @@ public class LivingEntity : MonoBehaviour, IDamageable {
             // 이미 사망한 경우 체력을 회복할 수 없음
             return;
         }
-
-        // 체력 추가
-        health += newHealth;
+        if(health + newHealth > maxHealth)
+            health = maxHealth;
+        else
+            health += newHealth;
     }
 
     // 사망 처리
