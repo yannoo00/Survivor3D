@@ -886,6 +886,7 @@ public class ItemAllocater : MonoBehaviour
         itemContent.Add(21,"Max shield + 25, Deal damage to surrounding enemies(max :20).\n Damage and boudary increase by 10% of shield amount");
         itemContent.Add(22,"Rotate aruond player");
 
+        //powerup item info
         powerupContent.Add(0,"moving speed +0.4");
         powerupContent.Add(1,"Gun fire damage+4, Dash Cooldown-2, Max Shield+10, Max HP+10");
         powerupContent.Add(2,"Gem +2000");
@@ -898,6 +899,8 @@ public class ItemAllocater : MonoBehaviour
         powerupContent.Add(9,"Max Shield+45");
         powerupContent.Add(10,"Dash Cooldown -3");
 
+
+        //item skill info
         itemSkill.Add(0,"[Sword Master]");
         itemSkill.Add(1,"[Sword Master], [Hell Walker]");
         itemSkill.Add(2,"[High Templar]");
@@ -1122,7 +1125,7 @@ public class ItemAllocater : MonoBehaviour
 
             case 1:
 
-                if(!GameManager.instance.itemChecker[chosen1])
+                if(!GameManager.instance.itemChecker[chosen1]&&!fullItem)
                 {
                     item = itemList[chosen1].GetComponent<IItem>();
                     item.Use(player); 
@@ -1141,7 +1144,7 @@ public class ItemAllocater : MonoBehaviour
             
             case 2:
 
-                if(!GameManager.instance.itemChecker[chosen2])
+                if(!GameManager.instance.itemChecker[chosen2]&&!fullItem)
                 {
                     item = itemList[chosen2].GetComponent<IItem>();
                     item.Use(player); 
@@ -1158,7 +1161,7 @@ public class ItemAllocater : MonoBehaviour
             
             case 3:
 
-                if(!GameManager.instance.itemChecker[chosen3])
+                if(!GameManager.instance.itemChecker[chosen3]&&!fullItem)
                 {
                     item = itemList[chosen3].GetComponent<IItem>();
                     item.Use(player); 

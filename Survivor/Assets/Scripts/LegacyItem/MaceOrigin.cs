@@ -17,7 +17,7 @@ public class MaceOrigin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.tag == "Enemy" && !other.GetComponent<LivingEntity>().dead)
+        if(other.tag == "Enemy" && other.GetComponent<LivingEntity>()!=null)
             other.GetComponent<LivingEntity>().OnDamage(damage);    
     }
 }

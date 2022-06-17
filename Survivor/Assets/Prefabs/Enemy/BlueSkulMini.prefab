@@ -1179,7 +1179,7 @@ MonoBehaviour:
   enemyRenderer: {fileID: 4639924838606208226}
   flashWhite: {fileID: 2100000, guid: f3263dadf98ae524091aca0dc1aa10b0, type: 2}
   originColor: {fileID: 0}
-  timeBetAttack: 0.25
+  timeBetAttack: 0.275
   speed: 9
   bulletNumber: 35
   reach: 10

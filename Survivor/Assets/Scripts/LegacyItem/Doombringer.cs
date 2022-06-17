@@ -24,7 +24,7 @@ public class Doombringer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag =="Enemy")
+        if(other.tag =="Enemy"&&other.GetComponent<LivingEntity>()!=null)
         {
             other.GetComponent<LivingEntity>().OnDamage(damage);
             transform.parent.parent.parent.GetComponent<PlayerHealth>().RestoreHealth(1);

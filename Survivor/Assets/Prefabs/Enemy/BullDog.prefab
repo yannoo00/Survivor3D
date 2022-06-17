@@ -1049,7 +1049,7 @@ MonoBehaviour:
   dieAudio: {fileID: 8300000, guid: 8c77850bf78c07a49b57e00fe175d6a6, type: 3}
   enemyRenderer: {fileID: 881518435355304483}
   flashWhite: {fileID: 2100000, guid: f3263dadf98ae524091aca0dc1aa10b0, type: 2}
-  timeBetAttack: 1
+  timeBetAttack: 1.5
   speed: 4
 --- !u!1 &2139163492810822776
 GameObject:

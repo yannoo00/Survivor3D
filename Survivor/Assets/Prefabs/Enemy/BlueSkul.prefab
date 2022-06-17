@@ -1166,6 +1166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2000
+  maxHealth: 100
   hudDamageText: {fileID: 690813016575014980, guid: dfe9dfe63b2a63446ab05ddd8f0ff61b,
     type: 3}
   whatIsTarget:
@@ -1178,9 +1179,10 @@ MonoBehaviour:
   enemyRenderer: {fileID: 4639924838606208226}
   flashWhite: {fileID: 2100000, guid: f3263dadf98ae524091aca0dc1aa10b0, type: 2}
   originColor: {fileID: 0}
-  timeBetAttack: 0.25
+  timeBetAttack: 0.325
   speed: 9
   bulletNumber: 35
+  reach: 11
 --- !u!1 &5041555229479909187
 GameObject:
   m_ObjectHideFlags: 0

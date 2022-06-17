@@ -2119,9 +2119,11 @@ MonoBehaviour:
     m_Bits: 8
   bulletPrefab: {fileID: 2344031555355899087, guid: f6b416202a822d9479330bd39344c383,
     type: 3}
+  die: {fileID: 0}
+  dieAudio: {fileID: 0}
   enemyRenderer: {fileID: 5713115863946401114}
   flashWhite: {fileID: 2100000, guid: f3263dadf98ae524091aca0dc1aa10b0, type: 2}
-  timeBetAttack: 1
+  timeBetAttack: 1.25
   speed: 4
 --- !u!65 &2988832367061563450
 BoxCollider:
